@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       #- run: yarn install
-      - run: npm install --save-dev mocha supertest
+      - run: npm install --save-dev supertest
 
       - save_cache:
           paths:
