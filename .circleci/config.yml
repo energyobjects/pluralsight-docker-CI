@@ -36,7 +36,4 @@ jobs:
       - run: npm install --save-dev supertest
       - run: npm install --save-dev mocha
       - run: ./node_modules/mocha/bin/mocha
-      - run:
-          name: Trigger CircleCI
-          command: curl https://registry.hub.docker.com/u/energyobjects/pluralsight-docker-ci/trigger/6b5462aa-451e-4411-b902-52fe82f73990/
-          when: on_success
+      - run: curl https://registry.hub.docker.com/u/energyobjects/pluralsight-docker-ci/trigger/6b5462aa-451e-4411-b902-52fe82f73990/
